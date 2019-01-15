@@ -22,34 +22,60 @@ public class TextBox : MonoBehaviour {
 
 	private const float PRINT_TIME = 1/45f; // Time it takes in-between printing characters of text to the textbox.
 
-	/** Get the nametag, textfield, and image display children, then set the name.	 
+    private bool fForward = false; //Is the fast forward button toggled or not
+    private Button fForwardButton; //Reference to the fast forward button
+
+	/** Get the nametag, textfield, fast forward button, and image display children, then set the name.	 
 	 */
 	private void Awake() {
 		nametag = transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();
 		textfield = transform.GetChild(1).GetComponent<Text>();
 		imgDisplay = transform.GetChild(2).GetComponent<Image>();
 		nametag.text = name;
+
+        fForwardButton = transform.GetChild(3).GetComponent<Button>();
 	}
 
 	// Upon startup, begin displaying text.
 	private void Start() {
 		currCoroutine = StartCoroutine(DisplayText(0));
-	}
+        imgDisplay.sprite = images[0];
+    }
 
 	// Stop the current coroutine and then display the previous piece of dialogue.
 	public void Back() {
 		if (currIndex - 1 < 0) { // Bounds checking
 			return;
 		}
-		StopCoroutine(currCoroutine);
-		currIndex--;
-		currCoroutine = StartCoroutine(DisplayText(currIndex));
-	}
+
+        ChangeIndex(currIndex - 1);
+    }
 
 	// Display the whole piece of dialogue.
 	public void FastForward() {
-		StopCoroutine(currCoroutine);
-		textfield.text = dialogue[currIndex];
+        if(fForward == false)
+        {
+            fForward = true;
+            StopCoroutine(currCoroutine);
+            textfield.text = dialogue[currIndex];
+
+            ColorBlock newColor = new ColorBlock();
+            newColor= fForwardButton.colors;
+            newColor.highlightedColor = new Color(.81f, .81f, .81f);
+            newColor.normalColor = new Color(.85f, .85f, .85f);
+            fForwardButton.colors = newColor;
+        }
+        else
+        {
+            fForward = false;
+
+            ColorBlock newColor = new ColorBlock();
+            newColor = fForwardButton.colors;
+            newColor.highlightedColor = new Color(.96f, .96f, .96f);
+            newColor.normalColor = new Color(1, 1, 1);
+            fForwardButton.colors = newColor;
+        }
+
 	}
 
 	// Stop the current coroutine and then display the next piece of dialogue.
@@ -58,10 +84,31 @@ public class TextBox : MonoBehaviour {
 			SceneManager.LoadScene("Page Demo");
 			return;
 		}
-		StopCoroutine(currCoroutine);
-		currIndex++;
-		currCoroutine = StartCoroutine(DisplayText(currIndex));
+
+        ChangeIndex(currIndex + 1);
 	}
+
+    //Function to handle the beginning of the text display based on fast forward state
+    private void ChangeIndex(int newIndex)
+    {
+        //stop the current coroutine and set the new index
+        StopCoroutine(currCoroutine);
+        currIndex = newIndex;
+
+        // Display Image
+        imgDisplay.sprite = images[currIndex];
+
+        //Either start the coroutine to slowly display the text or show it all at once
+        if (fForward)
+        {
+            textfield.text = dialogue[currIndex];
+        }
+        else
+        {
+            currCoroutine = StartCoroutine(DisplayText(currIndex));
+        }
+
+    }
 
 	/** Clear the textfield and then gradually print the text of the current dialogue piece to the screen.
 	 * param[index] - the index of the dialogue array we want to display.
@@ -69,8 +116,6 @@ public class TextBox : MonoBehaviour {
 	private IEnumerator DisplayText(int index) {
 		textfield.text = "";
 		string currString = dialogue[index];
-		// Display Image
-		imgDisplay.sprite = images[index];
 		// Display text
 		for (int i = 0; i < currString.Length; i++) {
 			textfield.text += currString[i];
