@@ -19,6 +19,7 @@ public class PageObject : MonoBehaviour {
 	public int[] visibleRange;  // If the array size is zero, then this will be always visible.
 
 	public bool isDark; // Whether or not this object can be red-flagged as a Dark Pattern.
+	private bool hasBeenFlagged = false;
 
 	private Image img; // The base image for this PageObject.
 	private Text text; // The text object that could be a child of this PageObject. [text is optional]
@@ -47,6 +48,11 @@ public class PageObject : MonoBehaviour {
 	 */
 	public void Click() {
 		Page.instance.UpdatePage(clickIndex);
+		// Red-Flag (right-click) handling
+		if (Input.GetMouseButton(1) && isDark && !hasBeenFlagged) {
+			hasBeenFlagged = true;
+			Debug.Log("RED FLAGGED");
+		}
 	}
 
 	/** Called by the Page, this searches the visible range to see if this should be visible

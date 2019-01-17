@@ -930,8 +930,8 @@ MonoBehaviour:
     your personal information. And we're here to help you point out some red flags
     to watch out for.
   - Welcome to the Hall of Dark Patterns, a museum exhibit dedicated to exposing these
-    devious design choices. I'm Shia, and I'm one of multiple hosts here. How does
-    it work?
+    devious design choices. I'm Shia, and I'm one of multiple hosts here. You might
+    be asking to yourself, "How does it work?"
   - Well, I'll give you a mission after each lesson where you interact with a simulated
     webpage or app to complete tasks, like playing a mobile game or doing some online
     shopping. Don't worry, it's all in a safe environment!
@@ -946,8 +946,8 @@ MonoBehaviour:
     coupon, then you must obviously prefer to stay weak, right? Well, what if you
     already have enough powder, or you prefer another brand?
   - If you want to pick the "no" option, you basically have to take the insult. However,
-    what exactly is insulting you but an image written by someone small to manipulate
-    all visitors on the webpage into spending more?
+    consider that the prompt demeans not just you, but everyone who also visits the
+    site. In other words, this is the most impersonal insult ever written.
   - 'Next is Button-Swapping. This is another technique involving "yes" and "no" options,
     but it''s different in that it plays with the position of the buttons, rather
     than what they say. Here''s how it works:'
@@ -959,12 +959,12 @@ MonoBehaviour:
   - Finally, we have the "Virtual Hostage". This is where the program or webpage provokes
     a user by placing a character or desired item in distress so that the user will
     "save" them.
-  - This can be seen often in casual games, but on storefronts, it usually takes the
-    form of something like, "If you cancel your subscription, you won't be able to
-    get these amazing deals again!"
-  - In this case, the deals are the hostage "in distress". However, users shouldn't
-    be compelled into complying because there is no real threat of danger for any
-    party involved.
+  - This can be seen often in casual games with characters, but on storefronts, it
+    usually takes the form of something like, "If you cancel your subscription, you
+    won't be able to get these amazing deals again!"
+  - In this case, the deals are the hostage "in distress," which might sound a bit
+    strange. However, there is no real threat of danger for any party involved; it's
+    just an illustration on a screen.
   - What, are they going to chuck the jar of protein powder that they had "saved just
     for you" over a pit of lava? Of course not! It's all a game of manipulation, and
     you'll see this come back in later lessons.
@@ -985,8 +985,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d3e5ce13f4691ff46a92e97e138b8d0d, type: 3}
   - {fileID: 21300000, guid: bc9ed7fda0f38a54baa26d7c1c589010, type: 3}
   - {fileID: 21300000, guid: bcd5e9c4917216849961568584233b60, type: 3}
-  - {fileID: 21300000, guid: 23413c8a6a96dd44e9d2869f418d67b4, type: 3}
-  - {fileID: 21300000, guid: 23413c8a6a96dd44e9d2869f418d67b4, type: 3}
+  - {fileID: 21300000, guid: 0344404a91d6fa44891f1e7a61c67bf9, type: 3}
+  - {fileID: 21300000, guid: 0344404a91d6fa44891f1e7a61c67bf9, type: 3}
   - {fileID: 21300000, guid: caf6ce7263126e34091023af85a7c441, type: 3}
   - {fileID: 21300000, guid: 87084943141b3404d94e1ce426541bfd, type: 3}
   - {fileID: 21300000, guid: caf6ce7263126e34091023af85a7c441, type: 3}
