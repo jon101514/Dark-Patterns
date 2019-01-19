@@ -17,6 +17,7 @@ public class TextBox : MonoBehaviour {
 	private Text nametag; // Displays the Name of the host.
 	private Text textfield; // Displays text to post.
 	private Image imgDisplay; // Displays the current image.
+	private Text pagesLeft; // Displays the current page and the number of pages left. Found within a panel.
 	private int currIndex = 0; // Index of the dialogue array we're on.
 	private Coroutine currCoroutine; // The current coroutine we're running.
 
@@ -25,15 +26,19 @@ public class TextBox : MonoBehaviour {
     private bool fForward = false; //Is the fast forward button toggled or not
     private Button fForwardButton; //Reference to the fast forward button
 
+	private AudioSource audi; // Used to play our talking sounds.
+
 	/** Get the nametag, textfield, fast forward button, and image display children, then set the name.	 
 	 */
 	private void Awake() {
 		nametag = transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();
 		textfield = transform.GetChild(1).GetComponent<Text>();
 		imgDisplay = transform.GetChild(2).GetComponent<Image>();
+		pagesLeft = transform.GetChild(3).transform.GetChild(0).GetComponent<Text>();
 		nametag.text = name;
 
         fForwardButton = transform.GetChild(3).GetComponent<Button>();
+		audi = GetComponent<AudioSource>();
 	}
 
 	// Upon startup, begin displaying text.
@@ -60,10 +65,12 @@ public class TextBox : MonoBehaviour {
             textfield.text = dialogue[currIndex];
 
             ColorBlock newColor = new ColorBlock();
-            newColor= fForwardButton.colors;
-            newColor.highlightedColor = new Color(.81f, .81f, .81f);
-            newColor.normalColor = new Color(.85f, .85f, .85f);
-            fForwardButton.colors = newColor;
+			if (fForwardButton != null) {
+				newColor = fForwardButton.colors;
+				newColor.highlightedColor = new Color(.81f, .81f, .81f);
+				newColor.normalColor = new Color(.85f, .85f, .85f);
+				fForwardButton.colors = newColor;
+			}
         }
         else
         {
@@ -116,9 +123,14 @@ public class TextBox : MonoBehaviour {
 	private IEnumerator DisplayText(int index) {
 		textfield.text = "";
 		string currString = dialogue[index];
+		// Update the pages left text
+		pagesLeft.text = "(" + (index + 1) + " / " + dialogue.Length + ")";
 		// Display text
 		for (int i = 0; i < currString.Length; i++) {
 			textfield.text += currString[i];
+			if (i % 3 != 0 || currString[i].Equals(" ")) {} else {
+				audi.Play();
+			}
 			yield return new WaitForSeconds(PRINT_TIME);
 		}
 	}

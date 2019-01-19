@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NaturalSupports.unity
     guid: a9e800b1fc823c9478915ff146f9f09e
+  - enabled: 1
+    path: Assets/Scenes/Conclusion.unity
+    guid: af4d26c7cde4e654d96d5554fffe293e
   m_configObjects: {}
