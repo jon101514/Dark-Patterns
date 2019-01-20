@@ -88,7 +88,7 @@ public class TextBox : MonoBehaviour {
 	// Stop the current coroutine and then display the next piece of dialogue.
 	public void Next() {
 		if (currIndex + 1 >= dialogue.Length) { // Bounds checking
-			SceneManager.LoadScene("NaturalSupports");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Load the next scene.
 			return;
 		}
 

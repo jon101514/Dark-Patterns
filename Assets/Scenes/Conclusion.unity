@@ -990,89 +990,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Shia
   dialogue:
-  - The internet... an infinite library that allows for the exchange of information
-    at speeds faster than ever before.
-  - Of course, this new medium of ours can be corrupted into a tool of manipulation,
-    even in the most benign places.
-  - Web designers with less-than-good intentions use certain tricks to deceive uneducated
-    or unaware visitors.
-  - 'These are called dark patterns. They are deliberate design choices intended to
-    trick the user into performing specific actions. '
-  - Why do they use them? Well, they might want to advertise products to you or obtain
-    your personal information. And we're here to help you point out some red flags
-    to watch out for.
-  - Welcome to the Hall of Dark Patterns, a museum exhibit dedicated to exposing these
-    devious design choices. I'm Shia, and I'm one of multiple hosts here. You might
-    be asking to yourself, "How does it work?"
-  - Well, I'll give you a mission after each lesson where you interact with a simulated
-    webpage or app to complete tasks, like playing a mobile game or doing some online
-    shopping. Don't worry, it's all in a safe environment!
-  - For this introductory lesson, I'm going to teach you about three different Dark
-    Patterns. They'll appear in the mission, so make sure you pay attention!
-  - Ever tried to refuse an offer, only to find that the button for saying "no" contains
-    some sort of insult? This is called Confirm-Shaming.
-  - It's when a prompt offers "yes" and "no" options, but one or more of the options
-    is loaded with some sort of insult to provoke users into clicking the option that
-    they want you to pick. Pretty dirty, huh?
-  - So in this example, if you don't want to give up your email for the protein powder
-    coupon, then you must obviously prefer to stay weak, right? Well, what if you
-    already have enough powder, or you prefer another brand?
-  - If you want to pick the "no" option, you basically have to take the insult. However,
-    consider that the prompt demeans not just you, but everyone who also visits the
-    site. In other words, this is the most impersonal insult ever written.
-  - 'Next is Button-Swapping. This is another technique involving "yes" and "no" options,
-    but it''s different in that it plays with the position of the buttons, rather
-    than what they say. Here''s how it works:'
-  - When you make your selection, for example, "no," you'll be given another prompt
-    to confirm your answer. There is a catch, however.
-  - In this second prompt, the button positions are swapped; the previous "yes" is
-    now "no" and vice-versa. If a user isn't careful, they might accidentally end
-    up clicking on the wrong answer.
-  - Finally, we have the "Virtual Hostage". This is where the program or webpage provokes
-    a user by placing a character or desired item in distress so that the user will
-    "save" them.
-  - This can be seen often in casual games with characters, but on storefronts, it
-    usually takes the form of something like, "If you cancel your subscription, you
-    won't be able to get these amazing deals again!"
-  - In this case, the deals are the hostage "in distress," which might sound a bit
-    strange. However, there is no real threat of danger for any party involved; it's
-    just an illustration on a screen.
-  - What, are they going to chuck the jar of protein powder that they had "saved just
-    for you" over a pit of lava? Of course not! It's all a game of manipulation, and
-    you'll see this come back in later lessons.
-  - So, now you know about Confirm-Shaming, Button-Swapping, and Virtual Hostages.
-    You can go back by hitting the "Back" button down below, but now that the lesson
-    is over, it's time for me to give you your first mission.
-  - 'So, your mission for this introductory lesson is to...
-
-    Cancel my Natural Supports subscription!
-
-    I''m warning you, there are three red flags you have to look out for. '
-  - Ready? Hit the "Next" button to start the mission. You can also hit "Back" to
-    review.
+  - Way to go on that mission!
+  - Knowing about these dark patterns really puts some websites into a different perspective,
+    doesn't it?
+  - In the final game, we'll have many more lessons, dark patterns, and webpages ready
+    for you.
+  - You'll even be able to meet some of my friends!
+  - By the way, remember those red flags from before? Well, if you flagged anything
+    during the mission, you can view those dark patterns in the Gallery...
+  - '...which we''re still building as of now. Think of it as a room full of collectables
+    and knick-knacks, but instead of collectables and knick-knacks, they''re examples
+    of dark patterns.'
+  - Well, I hope you had fun, and that you might have learned something useful. After
+    all, that's why we're here!
+  - If you hit the 'Next' button now, we'll escort you back to the main entrance.
+    Anyway, hope to see you again!
   images:
-  - {fileID: 21300000, guid: 33f1e3ffc0d6bd14289693ea0f26b975, type: 3}
-  - {fileID: 21300000, guid: 6ed70d5b311a1ee4f866f90103c5d108, type: 3}
-  - {fileID: 21300000, guid: 700882b24d5b5d7408cf68a7627637c2, type: 3}
-  - {fileID: 21300000, guid: d3e5ce13f4691ff46a92e97e138b8d0d, type: 3}
-  - {fileID: 21300000, guid: bc9ed7fda0f38a54baa26d7c1c589010, type: 3}
-  - {fileID: 21300000, guid: bcd5e9c4917216849961568584233b60, type: 3}
-  - {fileID: 21300000, guid: 0344404a91d6fa44891f1e7a61c67bf9, type: 3}
-  - {fileID: 21300000, guid: 0344404a91d6fa44891f1e7a61c67bf9, type: 3}
-  - {fileID: 21300000, guid: caf6ce7263126e34091023af85a7c441, type: 3}
-  - {fileID: 21300000, guid: 87084943141b3404d94e1ce426541bfd, type: 3}
-  - {fileID: 21300000, guid: caf6ce7263126e34091023af85a7c441, type: 3}
-  - {fileID: 21300000, guid: caf6ce7263126e34091023af85a7c441, type: 3}
-  - {fileID: 21300000, guid: 66b60c09c4e7eff48b718a3da203e306, type: 3}
-  - {fileID: 21300000, guid: 66b60c09c4e7eff48b718a3da203e306, type: 3}
-  - {fileID: 21300000, guid: 7635262a43024b74d988f6bf79a3bda4, type: 3}
-  - {fileID: 21300000, guid: faea5abc0e274b54bab5a340e90c8e2e, type: 3}
-  - {fileID: 21300000, guid: faea5abc0e274b54bab5a340e90c8e2e, type: 3}
-  - {fileID: 21300000, guid: da853b9c950df4144bf44e24d03c8723, type: 3}
-  - {fileID: 21300000, guid: 09b0df2e810660b4d82eeddf6a53baca, type: 3}
-  - {fileID: 21300000, guid: 4fece31a2f68c6848bef5cd06a5a8dcf, type: 3}
-  - {fileID: 21300000, guid: e67974d6440795943a6065ef01201e87, type: 3}
-  - {fileID: 21300000, guid: e67974d6440795943a6065ef01201e87, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
 --- !u!114 &1511914952
 MonoBehaviour:
   m_ObjectHideFlags: 0
