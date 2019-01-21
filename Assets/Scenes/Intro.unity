@@ -1073,6 +1073,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4fece31a2f68c6848bef5cd06a5a8dcf, type: 3}
   - {fileID: 21300000, guid: e67974d6440795943a6065ef01201e87, type: 3}
   - {fileID: 21300000, guid: e67974d6440795943a6065ef01201e87, type: 3}
+  nextSceneIndex: 2
 --- !u!114 &1511914952
 MonoBehaviour:
   m_ObjectHideFlags: 0

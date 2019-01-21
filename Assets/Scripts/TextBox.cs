@@ -13,6 +13,7 @@ public class TextBox : MonoBehaviour {
 	[TextArea(2, 4)]
 	public string[] dialogue; // Pieces of text; the "dialogue" the host speaks.
 	public Sprite[] images; // The images to display alongside each piece of dialogue.
+	public int nextSceneIndex; // Index of the next scene to load after this dialogue.
 
 	private Text nametag; // Displays the Name of the host.
 	private Text textfield; // Displays text to post.
@@ -77,10 +78,12 @@ public class TextBox : MonoBehaviour {
             fForward = false;
 
             ColorBlock newColor = new ColorBlock();
-            newColor = fForwardButton.colors;
-            newColor.highlightedColor = new Color(.96f, .96f, .96f);
-            newColor.normalColor = new Color(1, 1, 1);
-            fForwardButton.colors = newColor;
+			if (fForwardButton != null) {
+	            newColor = fForwardButton.colors;
+	            newColor.highlightedColor = new Color(.96f, .96f, .96f);
+	            newColor.normalColor = new Color(1, 1, 1);
+	            fForwardButton.colors = newColor;
+			}
         }
 
 	}
@@ -88,7 +91,7 @@ public class TextBox : MonoBehaviour {
 	// Stop the current coroutine and then display the next piece of dialogue.
 	public void Next() {
 		if (currIndex + 1 >= dialogue.Length) { // Bounds checking
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Load the next scene.
+			SceneManager.LoadScene(nextSceneIndex); // Load the next scene.
 			return;
 		}
 
@@ -108,6 +111,8 @@ public class TextBox : MonoBehaviour {
         //Either start the coroutine to slowly display the text or show it all at once
         if (fForward)
         {
+			// Update the pages left text
+			pagesLeft.text = "(" + (newIndex + 1) + " / " + dialogue.Length + ")";
             textfield.text = dialogue[currIndex];
         }
         else
