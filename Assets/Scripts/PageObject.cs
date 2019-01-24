@@ -8,8 +8,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class PageObject : MonoBehaviour {
+public class PageObject : MonoBehaviour, IPointerClickHandler {
 
 	public bool interactible; // Whether or not the user can click this PageObject.
 
@@ -48,10 +49,19 @@ public class PageObject : MonoBehaviour {
 	 */
 	public void Click() {
 		Page.instance.UpdatePage(clickIndex);
-		// Red-Flag (right-click) handling
-		if (Input.GetMouseButton(1) && isDark && !hasBeenFlagged) {
+
+	}
+
+	/** Handles right-clicking for all "dark" objects.
+	 * When you right click on a dark objet that hasn't been flagged yet, you will flag it red.
+	 * Based on the following code: https://forum.unity.com/threads/can-the-ui-buttons-detect-a-right-mouse-click.279027/
+	 */
+	public void OnPointerClick(PointerEventData peData) {
+		if (peData.button.Equals(PointerEventData.InputButton.Right) && isDark && !hasBeenFlagged) {
 			hasBeenFlagged = true;
-			Debug.Log("RED FLAGGED");
+			if (img) {
+				img.color = Color.red;
+			}
 		}
 	}
 
