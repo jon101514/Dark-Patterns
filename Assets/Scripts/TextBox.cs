@@ -13,6 +13,7 @@ public class TextBox : MonoBehaviour {
 	[TextArea(2, 4)]
 	public string[] dialogue; // Pieces of text; the "dialogue" the host speaks.
 	public Sprite[] images; // The images to display alongside each piece of dialogue.
+	public AudioClip[] audiCue; // The audio cue which accompanies each piece of dialogue.
 	public int nextSceneIndex; // Index of the next scene to load after this dialogue.
 
 	private Text nametag; // Displays the Name of the host.
@@ -113,6 +114,7 @@ public class TextBox : MonoBehaviour {
         {
 			// Update the pages left text
 			pagesLeft.text = "(" + (newIndex + 1) + " / " + dialogue.Length + ")";
+			audi.PlayOneShot(audiCue[newIndex]);
             textfield.text = dialogue[currIndex];
         }
         else
@@ -130,6 +132,7 @@ public class TextBox : MonoBehaviour {
 		string currString = dialogue[index];
 		// Update the pages left text
 		pagesLeft.text = "(" + (index + 1) + " / " + dialogue.Length + ")";
+		audi.PlayOneShot(audiCue[index]);
 		// Display text
 		for (int i = 0; i < currString.Length; i++) {
 			textfield.text += currString[i];

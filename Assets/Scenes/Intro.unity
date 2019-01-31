@@ -897,6 +897,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 82095269646518712, guid: 9eb21af127585ed488d7e17d661a9547,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 194cf7e3f2de9ce439db4d6890658271, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eb21af127585ed488d7e17d661a9547, type: 2}
   m_IsPrefabAsset: 0
@@ -1087,7 +1092,7 @@ MonoBehaviour:
     is over, it's time for me to give you your first mission.
   - 'So, your mission for this introductory lesson is to...
 
-    Cancel my Natural Supports subscription!
+    Delete my NaturalSupports account!
 
     I''m warning you, there are three red flags you have to look out for. '
   - Ready? Hit the "Next" button to start the mission. You can also hit "Back" to
@@ -1115,6 +1120,29 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4fece31a2f68c6848bef5cd06a5a8dcf, type: 3}
   - {fileID: 21300000, guid: e67974d6440795943a6065ef01201e87, type: 3}
   - {fileID: 21300000, guid: e67974d6440795943a6065ef01201e87, type: 3}
+  audiCue:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 82b88e2c82162f1488f835bc0c7a87be, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 30d5f6051b88cca4cb40deda29479fde, type: 3}
+  - {fileID: 8300000, guid: c89e2c009f33caf46b885fd601f44794, type: 3}
+  - {fileID: 8300000, guid: 0aa3fb64c53e7d74f8c22f901225f472, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   nextSceneIndex: 2
 --- !u!114 &1511914952
 MonoBehaviour:
@@ -1162,7 +1190,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2524fab673db4ab45baec14c543abab3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.125
-  m_Pitch: 0.5
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0

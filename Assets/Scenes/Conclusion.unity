@@ -1006,14 +1006,23 @@ MonoBehaviour:
   - If you hit the 'Next' button now, we'll escort you back to the main entrance.
     Anyway, hope to see you again!
   images:
+  - {fileID: 21300000, guid: f1a674b9cfdab5e42a9ce2d12cebbbc1, type: 3}
+  - {fileID: 21300000, guid: 8f66d0ad114e7014e95d6acee6f3e052, type: 3}
+  - {fileID: 21300000, guid: 1f4f1b0286a7fcd43884b4d52e948f3a, type: 3}
+  - {fileID: 21300000, guid: 2fb3909b705fd3b479da0505e92d3bc5, type: 3}
   - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
   - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
   - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
   - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  audiCue:
+  - {fileID: 8300000, guid: 15c2ea0089746b9428621c6d019d012f, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 0aa3fb64c53e7d74f8c22f901225f472, type: 3}
+  - {fileID: 8300000, guid: 15c2ea0089746b9428621c6d019d012f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 0aa3fb64c53e7d74f8c22f901225f472, type: 3}
+  - {fileID: 0}
   nextSceneIndex: 0
 --- !u!114 &1511914952
 MonoBehaviour:
@@ -1061,7 +1070,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2524fab673db4ab45baec14c543abab3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.125
-  m_Pitch: 0.5
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1183,6 +1192,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 82095269646518712, guid: 9eb21af127585ed488d7e17d661a9547,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 194cf7e3f2de9ce439db4d6890658271, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eb21af127585ed488d7e17d661a9547, type: 2}
   m_IsPrefabAsset: 0
