@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -999,19 +999,18 @@ MonoBehaviour:
   - By the way, remember those red flags from before? Well, if you flagged anything
     during the mission, you can view those dark patterns in the Gallery...
   - '...which we''re still building as of now. Think of it as a room full of collectables
-    and knick-knacks, but instead of collectables and knick-knacks, they''re examples
-    of dark patterns.'
+    and knick-knacks, but instead they''re examples of dark patterns.'
   - Well, I hope you had fun, and that you might have learned something useful. After
     all, that's why we're here!
   - If you hit the 'Next' button now, we'll escort you back to the main entrance.
-    Anyway, hope to see you again!
+    Hope to see you again soon!
   images:
   - {fileID: 21300000, guid: f1a674b9cfdab5e42a9ce2d12cebbbc1, type: 3}
   - {fileID: 21300000, guid: 8f66d0ad114e7014e95d6acee6f3e052, type: 3}
   - {fileID: 21300000, guid: 1f4f1b0286a7fcd43884b4d52e948f3a, type: 3}
   - {fileID: 21300000, guid: 2fb3909b705fd3b479da0505e92d3bc5, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 2f62642140135bf45bebc30c5bdf85cf, type: 3}
+  - {fileID: 21300000, guid: 2f62642140135bf45bebc30c5bdf85cf, type: 3}
   - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
   - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
   audiCue:
