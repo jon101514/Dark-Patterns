@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2010,6 +2010,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114685444682436882, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0d5cbd53b605a94486c1baca329d112,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e44b7064810b4c4b8bbb37c13a92cff, type: 2}
   m_IsPrefabAsset: 0
@@ -2930,7 +2936,7 @@ Prefab:
     - target: {fileID: 114685444682436882, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
         type: 2}
       propertyPath: m_Color.a
-      value: 0.38431373
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114921625876305710, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
         type: 2}
@@ -2951,6 +2957,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114685444682436882, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157f69f300f90a347bbce0cbf14e785c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e44b7064810b4c4b8bbb37c13a92cff, type: 2}
   m_IsPrefabAsset: 0
@@ -5274,6 +5286,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114685444682436882, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0d5cbd53b605a94486c1baca329d112,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e44b7064810b4c4b8bbb37c13a92cff, type: 2}
   m_IsPrefabAsset: 0
@@ -5298,7 +5316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1503427724
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5663,6 +5681,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114685444682436882, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0d5cbd53b605a94486c1baca329d112,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e44b7064810b4c4b8bbb37c13a92cff, type: 2}
   m_IsPrefabAsset: 0
@@ -6673,6 +6697,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114685444682436882, guid: 4e44b7064810b4c4b8bbb37c13a92cff,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0d5cbd53b605a94486c1baca329d112,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e44b7064810b4c4b8bbb37c13a92cff, type: 2}
   m_IsPrefabAsset: 0
@@ -7571,7 +7601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2141158818
 RectTransform:
   m_ObjectHideFlags: 0
