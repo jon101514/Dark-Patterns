@@ -1011,8 +1011,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2fb3909b705fd3b479da0505e92d3bc5, type: 3}
   - {fileID: 21300000, guid: 2f62642140135bf45bebc30c5bdf85cf, type: 3}
   - {fileID: 21300000, guid: 2f62642140135bf45bebc30c5bdf85cf, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
-  - {fileID: 21300000, guid: 0209146c6314ace40a4167f6b12d4ca9, type: 3}
+  - {fileID: 21300000, guid: 6b31b990d837f3841b2f702f464b7499, type: 3}
+  - {fileID: 21300000, guid: 9f8345b110454554280620be947ad79f, type: 3}
   audiCue:
   - {fileID: 8300000, guid: 15c2ea0089746b9428621c6d019d012f, type: 3}
   - {fileID: 0}
