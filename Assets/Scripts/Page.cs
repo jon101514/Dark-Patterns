@@ -20,6 +20,7 @@ public class Page : MonoBehaviour {
 	public Image blackScreen; // The black panel that helps us fade the scene out.
 
 	private List<PageObject> pageObjects; // List of all of the PageObjects that make up our simulated website.
+	private AudioSource audi;
 
 	// Set up the Singleton object.
 	private void Start() {
@@ -29,6 +30,7 @@ public class Page : MonoBehaviour {
 		pageObjects = new List<PageObject>(Object.FindObjectsOfType<PageObject>()); // Make a new list of all of the PageObjects.
 		UpdatePage(0);
 		blackScreen.enabled = false;
+		audi = GetComponent<AudioSource>();
 	}
 
 	/** When a PageObject is clicked, it calls this UpdatePage function with
@@ -51,6 +53,7 @@ public class Page : MonoBehaviour {
 	 * go to the next scene.
 	 */
 	private IEnumerator PlayerWin() {
+		audi.Play();
 		blackScreen.enabled = true; // Enable this as soon as the player wins to prevent further interactions -- it blocks any further clicks.
 		// Phase 1: Fruits
 		int fruits = Random.Range(16, 32);
